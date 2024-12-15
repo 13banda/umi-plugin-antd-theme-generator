@@ -13,7 +13,8 @@
   "main": "lib/index.js",
   "scripts": {
     "start": "CURRENT_PROJECT=example umi ui",
-    "build": "father-build"
+    "build": "father-build",
+    "postinstall": "father-build"
   },
   "devDependencies": {
     "@types/node": "^12.12.14",
