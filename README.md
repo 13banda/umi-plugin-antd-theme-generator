@@ -36,7 +36,7 @@ export default {
     // compress css
     min: process.env.NODE_ENV === 'production',
     // css module
-    generateScopedName：(filePath: string, className: string) => {
+    generateScopedName：(className: string, filePath: string) => {
       const match = filePath.match(/src(.*)/);
       if (match && match[1]) {
         const basePath = match[1].replace('.less', '');
